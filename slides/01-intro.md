@@ -1,17 +1,36 @@
 ---
-author: Display Lab
-title: Demo Slides
-date: 2019-05-21
+author: Colin Gross
+title: BraVue
+date: 2022-01-25
 ---
 
-# First Title
-Welcome to the first slide.
+# 
+<h3>Motivation</h3>
 
-Display Lab
+- Single project (no sub-projects)
+- Grep-able codebase
+- Single templating language
+- Single programing language
+- Consolidate styling
+- Testable
 
-2019-05-21
+# 
+<h3>Design</h3>
 
-# Second Title
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Vitae justo eget magna fermentum iaculis. 
+- Client side
+- Vue framework
+- Multipage Application
+
+##
+### Architecture
+
+![](assets/bravue-arch.svg){ width=600px }
+
+## 
+### Previous Arch
+
+![](assets/bravo-legacy-arch.svg){ width=650px }
+
+
+
 

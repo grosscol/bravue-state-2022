@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Display Lab">
-  <meta name="dcterms.date" content="2019-05-21">
-  <title>Demo Slides</title>
+  <meta name="author" content="Colin Gross">
+  <meta name="dcterms.date" content="2022-01-25">
+  <title>BraVue</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -90,89 +90,308 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Demo Slides</h1>
-  <p class="author">Display Lab</p>
-  <p class="date">2019-05-21</p>
-</section>
-
-<section id="first-title" class="title-slide slide level1">
-<h1>First Title</h1>
-<p>Welcome to the first slide.</p>
-<p>Display Lab</p>
-<p>2019-05-21</p>
-</section>
-
-<section id="second-title" class="title-slide slide level1">
-<h1>Second Title</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis.</p>
-</section>
-
-<section>
-<section id="third-title" class="title-slide slide level1">
-<h1>Third Title</h1>
-<p>Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc mattis enim ut tellus elementum sagittis vitae et.</p>
-</section>
-<section id="sub-1" class="slide level2">
-<h2>3 Sub 1</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;Hello World&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span><span class="kw">..</span><span class="dv">10</span>)<span class="at">.each</span><span class="kw">{</span> <span class="kw">|</span>n<span class="kw">|</span> <span class="fu">puts</span> n<span class="kw">+</span><span class="dv">10</span> <span class="kw">}</span></span></code></pre></div>
-<p>Enim nulla aliquet porttitor lacus luctus accumsan. Nulla pellentesque dignissim enim sit amet.</p>
-</section>
-<section id="sub-2" class="slide level2">
-<h2>3 Sub 2</h2>
-<p><del>Auctor neque vitae tempus quam pellentesque.</del></p>
-<h3 id="scelerisque-viverra-mauris-in-aliquam-sem-fringilla.">Scelerisque viverra mauris in aliquam sem fringilla.</h3>
-<p>Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.</p>
-</section>
-<section id="sub-3" class="slide level2">
-<h2>3 Sub 3</h2>
-<p><em>Massa id neque aliquam vestibulum morbi blandit cursus risus at.</em> <em>Vestibulum sed arcu non odio euismod.</em> <strong>Ut tellus elementum sagittis vitae et leo duis ut.</strong></p>
-</section></section>
-<section id="fourth-title" class="title-slide slide level1">
-<h1>Fourth Title</h1>
-<ul>
-<li>Duis at tellus at urna condimentum mattis pellentesque.</li>
-<li>Morbi leo urna molestie at elementum eu facilisis sed.</li>
-<li>Vel elit scelerisque mauris pellentesque pulvinar pellentesque.</li>
-</ul>
+  <h1 class="title">BraVue</h1>
+  <p class="author">Colin Gross</p>
+  <p class="date">2022-01-25</p>
 </section>
 
 <section id="section" class="title-slide slide level1">
 <h1></h1>
-<ol type="1">
-<li>Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.</li>
-<li>Curabitur vitae nunc sed velit dignissim sodales ut eu.</li>
-<li>Urna nec tincidunt praesent semper feugiat nibh sed.</li>
-</ol>
-</section>
-
-<section id="sixth-title" class="title-slide slide level1">
-<h1>Sixth Title</h1>
+<h3>
+Motivation
+</h3>
 <ul>
-<li>Suspendisse potenti nullam ac tortor vitae.</li>
-<li>Congue quisque egestas diam in arcu cursus euismod.</li>
-<li>Consectetur adipiscing elit duis tristique sollicitudin.</li>
+<li>Single project (no sub-projects)</li>
+<li>Grep-able codebase</li>
+<li>Single templating language</li>
+<li>Single programing language</li>
+<li>Consolidate styling</li>
+<li>Testable</li>
 </ul>
 </section>
 
 <section>
-<section id="seventh-title" class="title-slide slide level1">
-<h1>Seventh Title</h1>
-<p>Image content</p>
-<p><img data-src="assets/top_perf.svg" /></p>
+<section id="section-1" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Design
+</h3>
+<ul>
+<li>Client side</li>
+<li>Vue framework</li>
+<li>Multipage Application</li>
+</ul>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
-<figure>
-<img data-src="assets/top_perf.svg" width="250" alt="image title" /><figcaption aria-hidden="true">image title</figcaption>
-</figure>
+<h3 id="architecture">Architecture</h3>
+<p><img data-src="assets/bravue-arch.svg" width="600" /></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<h3 id="previous-arch">Previous Arch</h3>
+<p><img data-src="assets/bravo-legacy-arch.svg" width="650" /></p>
 </section></section>
-<section id="seventh-title-1" class="title-slide slide level1">
-<h1>Seventh Title</h1>
-<p>Incremental fragments</p>
-<p><span class="fragment"> stuff </span></p>
-<p><span class="fragment"> other </span></p>
-<p><span class="fragment"> stuff </span></p>
+<section>
+<section id="section-4" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Multipage Application
+</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/grosscol/workspace/vapp/src/pages/</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> gene</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── gene.html</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── GenePage.vue</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> └── main.js</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> home</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── home.html</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── Home.vue</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> └── main.js</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> region</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── region.html</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── RegionPage.vue</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> └── main.js</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> variant</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> variant.html</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> Variant.vue</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> main.js</span></code></pre></div>
+</section>
+<section id="vue.config.js" class="slide level2">
+<h2>vue.config.js</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>module<span class="op">.</span><span class="at">exports</span> <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publicPath</span><span class="op">:</span> <span class="st">&#39;/&#39;</span><span class="op">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span><span class="op">:</span> {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">home</span><span class="op">:</span> {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span> <span class="st">&#39;src/pages/home/main.js&#39;</span><span class="op">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">template</span><span class="op">:</span> <span class="st">&#39;src/pages/home/home.html&#39;</span><span class="op">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">filename</span><span class="op">:</span> <span class="st">&#39;index.html&#39;</span><span class="op">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bravo:Home&#39;</span><span class="op">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span> [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;home&#39;</span>]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">variant</span><span class="op">:</span> {</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span> <span class="st">&#39;src/pages/variant/main.js&#39;</span><span class="op">,</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">template</span><span class="op">:</span> <span class="st">&#39;src/pages/variant/variant.html&#39;</span><span class="op">,</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>      <span class="co">//filename: &#39;variant&#39;,</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bravo:Variant&#39;</span><span class="op">,</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span> [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;variant&#39;</span>]</span></code></pre></div>
+</section></section>
+<section>
+<section id="section-5" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Shared Components
+</h3>
+<ul>
+<li>Histogram component on gene and region pages.</li>
+<li>Mostly identical code.</li>
+<li>Differ on parameters and API endpoint.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// BaseSnvCount methods</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  methods<span class="op">:</span> {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">load</span><span class="op">:</span> <span class="kw">function</span>(width) {</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>      axios<span class="op">.</span><span class="fu">post</span>(<span class="kw">this</span><span class="op">.</span><span class="at">url</span><span class="op">,</span> { <span class="op">...</span>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>      <span class="op">...</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">format_y_ticks</span><span class="op">:</span> <span class="kw">function</span>(value) {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">initializeSVG</span><span class="op">:</span>  <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">draw</span><span class="op">:</span>           <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">drawHistogram</span><span class="op">:</span>  <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">drawVariants</span><span class="op">:</span>   <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">clearDrawing</span><span class="op">:</span>   <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span></code></pre></div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<h3 id="gene-variants-histogram">Gene Variants Histogram</h3>
+<ul>
+<li>Extends BaseSnvCount component</li>
+<li>Defines what’s required for gene histogram</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> BaseSnvCount <span class="im">from</span> <span class="st">&#39;@/components/histogram/BaseSnvCount.vue&#39;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> {</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;GeneSnvCount&quot;</span><span class="op">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">extends</span><span class="op">:</span> BaseSnvCount<span class="op">,</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">inject</span><span class="op">:</span> {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ensemblId</span><span class="op">:</span> {<span class="cf">default</span><span class="op">:</span> <span class="st">&#39;&#39;</span> }</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">computed</span><span class="op">:</span> {</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">url</span>() { <span class="cf">return</span> <span class="vs">`</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">api</span><span class="sc">}</span><span class="vs">/variants/gene/snv/</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">ensemblId</span><span class="sc">}</span><span class="vs">/histogram`</span> }</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span></code></pre></div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<h3 id="region-variants-histogram">Region Variants Histogram</h3>
+<ul>
+<li>Also extends BaseSnvCount component</li>
+<li>Defines what’s required for region histogram</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> BaseSnvCount <span class="im">from</span> <span class="st">&#39;@/components/histogram/BaseSnvCount.vue&#39;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> {</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;RegionSnvCount&quot;</span><span class="op">,</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">extends</span><span class="op">:</span> BaseSnvCount<span class="op">,</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">inject</span><span class="op">:</span> {</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">chrom</span><span class="op">:</span> {<span class="cf">default</span><span class="op">:</span> <span class="st">&#39;11&#39;</span>}<span class="op">,</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">start</span><span class="op">:</span> {<span class="cf">default</span><span class="op">:</span> <span class="dv">200000</span>}<span class="op">,</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">stop</span><span class="op">:</span>  {<span class="cf">default</span><span class="op">:</span> <span class="dv">201000</span>}<span class="op">,</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">computed</span><span class="op">:</span> {</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">url</span>() { <span class="cf">return</span> <span class="vs">`</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">api</span><span class="sc">}</span><span class="vs">/variants/region/snv/</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">chrom</span><span class="sc">}</span><span class="vs">-</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">start</span><span class="sc">}</span><span class="vs">-</span><span class="sc">${</span><span class="kw">this</span><span class="op">.</span><span class="at">stop</span><span class="sc">}</span><span class="vs">/histogram`</span> }</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span></code></pre></div>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<h3 id="clear-components">Clear Components</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>GeneSnvCount </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>segmentBounds<span class="op">=</span><span class="st">&quot;segmentBounds&quot;</span> <span class="op">:</span>segmentRegions<span class="op">=</span><span class="st">&quot;segmentRegions&quot;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>givenWidth<span class="op">=</span><span class="st">&quot;childWidth&quot;</span> <span class="op">:</span>givenMargins<span class="op">=</span><span class="st">&quot;childMargins&quot;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>filters<span class="op">=</span><span class="st">&quot;filterArray&quot;</span> <span class="op">:</span>visibleVariants<span class="op">=</span><span class="st">&quot;visibleVariants&quot;</span><span class="op">/&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>RegionSnvCount</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>segmentBounds<span class="op">=</span><span class="st">&quot;segmentBounds&quot;</span> <span class="op">:</span>segmentRegions<span class="op">=</span><span class="st">&quot;segmentRegions&quot;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>givenWidth<span class="op">=</span><span class="st">&quot;childWidth&quot;</span> <span class="op">:</span>givenMargins<span class="op">=</span><span class="st">&quot;childMargins&quot;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>filters<span class="op">=</span><span class="st">&quot;filterArray&quot;</span> <span class="op">:</span>visibleVariants<span class="op">=</span><span class="st">&quot;visibleVariants&quot;</span><span class="op">/&gt;</span></span></code></pre></div>
+</section></section>
+<section>
+<section id="section-9" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Composition
+</h3>
+<ul>
+<li>Wrap functionality into discrete components</li>
+<li>Easier to compose different dashboards</li>
+</ul>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<h3 id="gene-dashboard">Gene Dashboard</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;template&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;GeneInfo</span> <span class="er">:geneData</span><span class="ot">=</span><span class="st">&quot;geneData&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;ToggleList</span> <span class="er">list-title</span><span class="ot">=</span><span class="st">&quot;Panels&quot;</span> <span class="er">list-group</span><span class="ot">=</span><span class="st">&quot;showPanels&quot;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ot">      :list-vars=</span><span class="st">&quot;showPanels&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;ToggleList</span> <span class="er">list-title</span><span class="ot">=</span><span class="st">&quot;Columns&quot;</span> <span class="er">list-group</span><span class="ot">=</span><span class="st">&quot;showCols&quot;</span> </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="ot">      :list-vars=</span><span class="st">&quot;showCols&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;GeneSummary</span> <span class="er">:filterArray</span><span class="ot">=</span><span class="st">&#39;filterArray&#39;</span> <span class="kw">/&gt;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;SeqDepth</span> </span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="ot">      :hoveredVariant=</span><span class="st">&quot;hoveredVariant&quot;</span> <span class="er">:segmentBounds</span><span class="ot">=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="ot">      :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span> <span class="er">:givenWidth</span><span class="ot">=</span><span class="st">&quot;childWidth&quot;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="ot">      :givenMargins=</span><span class="st">&quot;childMargins&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;TranscriptBars</span>  <span class="er">:geneData</span><span class="ot">=</span><span class="st">&quot;geneData&quot;</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="ot">      :hoveredVariant=</span><span class="st">&quot;hoveredVariant&quot;</span> <span class="er">:segmentBounds</span><span class="ot">=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="ot">      :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span> <span class="er">:givenWidth</span><span class="ot">=</span><span class="st">&quot;childWidth&quot;</span> </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="ot">      :givenMargins=</span><span class="st">&quot;childMargins&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;GeneSnvCount</span>  </span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="ot">      :segmentBounds=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="ot">      :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span> <span class="er">:givenWidth</span><span class="ot">=</span><span class="st">&quot;childWidth&quot;</span> </span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="ot">      :givenMargins=</span><span class="st">&quot;childMargins&quot;</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="ot">      :filters=</span><span class="st">&quot;filterArray&quot;</span> <span class="er">:visibleVariants</span><span class="ot">=</span><span class="st">&quot;visibleVariants&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;BpCoordBar</span> <span class="er">:segmentBounds</span><span class="ot">=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="ot">      :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span> </span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="ot">      :givenWidth=</span><span class="st">&quot;childWidth&quot;</span> <span class="er">:givenMargins</span><span class="ot">=</span><span class="st">&quot;childMargins&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;FilterBar</span> <span class="er">@filterChange</span><span class="ot">=</span><span class="st">&#39;handleFilterChange&#39;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;GeneSNVTable</span> <span class="er">:filters</span><span class="ot">=</span><span class="st">&quot;filterArray&quot;</span> <span class="er">:doDownload</span><span class="ot">=</span><span class="st">&quot;doDownload&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/template&gt;</span></span></code></pre></div>
+</section></section>
+<section>
+<section id="section-11" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Tests
+</h3>
+<ul>
+<li>Vue supports unit and component tests.</li>
+<li>Handy one liner to run tests when files change:</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">fd</span> <span class="st">&#39;\.(js|Vue|vue)$&#39;</span> . <span class="kw">|</span> <span class="ex">entr</span> <span class="at">-c</span> npm run test:unit</span></code></pre></div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<h3 id="test-component-functions-directly">Test Component Functions Directly</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">//describe(&#39;SearchBox.vue query parsing.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">it</span>(<span class="st">&#39;tickets a dbSNP reference query with endpoint: variant&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> rsid_result <span class="op">=</span> wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="fu">queryToResultTicket</span>(<span class="st">&#39;rs12345678&#39;</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(rsid_result<span class="op">.</span><span class="at">endpoint</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(<span class="st">&#39;variant&#39;</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">it</span>(<span class="st">&#39;tickets a range query with endpoint: region&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> range_result <span class="op">=</span> wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="fu">queryToResultTicket</span>(<span class="st">&#39;chr11:10,500,100-10,503,000&#39;</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(range_result<span class="op">.</span><span class="at">endpoint</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(<span class="st">&#39;region&#39;</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">it</span>(<span class="st">&#39;defaults to ticket query with endpoint: gene&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> range_result <span class="op">=</span> wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="fu">queryToResultTicket</span>(<span class="st">&#39;HBBP1&#39;</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(range_result<span class="op">.</span><span class="at">endpoint</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(<span class="st">&#39;gene&#39;</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  })</span></code></pre></div>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<h3 id="test-component-ui-behavior">Test Component UI Behavior</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(<span class="st">&#39;QualityFilterButton dropdown&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">it</span>(<span class="st">&#39;toggles showDropDown when button is clicked&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> wrapper <span class="op">=</span> <span class="fu">shallowMount</span>(QualityFilterButton<span class="op">,</span> {})</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> initialState <span class="op">=</span> wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="at">showDropDown</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    wrapper<span class="op">.</span><span class="fu">find</span>(<span class="st">&#39;button&#39;</span>)<span class="op">.</span><span class="fu">trigger</span>(<span class="st">&#39;click&#39;</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="at">showDropDown</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(<span class="op">!</span>initialState)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    wrapper<span class="op">.</span><span class="fu">find</span>(<span class="st">&#39;button&#39;</span>)<span class="op">.</span><span class="fu">trigger</span>(<span class="st">&#39;click&#39;</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(wrapper<span class="op">.</span><span class="at">vm</span><span class="op">.</span><span class="at">showDropDown</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(initialState)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+</section></section>
+<section id="section-14" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Drawbacks
+</h3>
+<ul>
+<li>Upgrade entire toolchain for all components.</li>
+<li>UI not locked behind auth.</li>
+<li>Loss* of parsing params from path
+<ul>
+<li>Can be reworked if required</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="section-15" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Future Work
+</h3>
+<ul>
+<li>eQTL display:
+<ul>
+<li>specialized region view</li>
+<li>region view with different input</li>
+</ul></li>
+<li>Separation of concerns:
+<ul>
+<li>get data</li>
+<li>display data</li>
+</ul></li>
+<li>Single Page App investigation:
+<ul>
+<li>persist data to avoid reload on “back”</li>
+<li>load times</li>
+<li>dist size</li>
+</ul></li>
+</ul>
 </section>
     </div>
   </div>

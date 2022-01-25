@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="137.78958mm"
+   height="108.17084mm"
+   viewBox="0 0 137.78959 108.17084"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="bravue-arch.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="-16.32771"
+     inkscape:cy="176.45548"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-grids="false"
+     inkscape:window-width="2190"
+     inkscape:window-height="1365"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     fit-margin-top="0.4"
+     fit-margin-bottom="0.4"
+     fit-margin-right="0.5"
+     fit-margin-left="0.5"
+     units="mm"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-others="false"
+     inkscape:object-nodes="false"
+     inkscape:snap-nodes="false"
+     inkscape:snap-global="true">
+    <sodipodi:guide
+       position="-22.518748,-2.8249941"
+       orientation="1,0"
+       id="guide3734"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="3.9395869,-43.570839"
+       orientation="1,0"
+       id="guide3736"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="166.6875,16.404173"
+       orientation="0,1"
+       id="guide3738"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-45.272914,-57.064589"
+       orientation="0,1"
+       id="guide3742"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="28.016669,-57.064579"
+       orientation="1,0"
+       id="guide3750"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="112.97708,71.966672"
+       orientation="1,0"
+       id="guide4711"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bkgd"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true"
+     transform="translate(-25.135416,-84.318749)">
+    <rect
+       transform="translate(-14.316664,138.55627)"
+       style="fill:#989cd7;stroke-width:0.30492339"
+       id="rect3748-6"
+       width="43.664902"
+       height="107.37083"
+       x="133.07675"
+       y="-53.837509"
+       ry="0" />
+    <rect
+       transform="translate(-14.316664,138.55627)"
+       style="fill:#93b47d;stroke-width:0.44530433"
+       id="rect3748-6-7"
+       width="93.124664"
+       height="107.37083"
+       x="39.95208"
+       y="-53.837521"
+       ry="0" />
+    <text
+       transform="translate(-14.316664,138.55627)"
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="41.539585"
+       y="50.542957"
+       id="text4644"><tspan
+         sodipodi:role="line"
+         id="tspan4642"
+         x="41.539585"
+         y="50.542957"
+         style="stroke-width:0.26458332">server</tspan></text>
+    <text
+       transform="translate(-14.316664,138.55627)"
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="135.20209"
+       y="51.599735"
+       id="text4648"><tspan
+         sodipodi:role="line"
+         id="tspan4646"
+         x="135.20209"
+         y="51.599735"
+         style="stroke-width:0.26458332">client</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-39.45208,54.237521)"
+     style="display:inline">
+    <rect
+       style="fill:#d9d9d9;stroke:#000000;stroke-width:0.41464099;stroke-opacity:1"
+       id="rect3713"
+       width="34.889565"
+       height="36.721619"
+       x="43.397968"
+       y="-44.657089" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.95138454px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.41464099"
+       x="42.031105"
+       y="-24.724655"
+       id="text4608"
+       transform="scale(1.0388152,0.96263513)"><tspan
+         sodipodi:role="line"
+         id="tspan4606"
+         x="42.031105"
+         y="-24.724655"
+         style="font-size:9.95138454px;stroke-width:0.41464099">Mongo</tspan></text>
+    <rect
+       style="fill:#d9d9d9;stroke:#000000;stroke-width:0.41464099;stroke-opacity:1"
+       id="rect3713-3"
+       width="34.889565"
+       height="36.721619"
+       x="43.613338"
+       y="0.44662985" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.05709362px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.41464099"
+       x="45.922817"
+       y="23.659569"
+       id="text4612"
+       transform="scale(1.0388152,0.96263513)"><tspan
+         sodipodi:role="line"
+         id="tspan4610"
+         x="45.922817"
+         y="23.659569"
+         style="font-size:11.05709362px;stroke-width:0.41464099">Files</tspan></text>
+    <rect
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.39825457;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3740"
+       width="36.03896"
+       height="82.241524"
+       x="86.462982"
+       y="-45.064758" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.22726631px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.40568164"
+       x="-9.7574654"
+       y="117.16141"
+       id="text4616"
+       transform="matrix(-0.0114853,-1.0643053,0.9394396,-0.01301187,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4614"
+         x="-9.7574654"
+         y="117.16141"
+         style="stroke-width:0.40568164">API</tspan></text>
+    <rect
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.50294298;stroke-opacity:1"
+       id="rect3746"
+       width="28.540283"
+       height="82.159698"
+       x="140.2614"
+       y="-45.288433" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.58563995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.41464099"
+       x="-25.649038"
+       y="154.68556"
+       id="text4620"
+       transform="matrix(0,-0.96263513,1.0388152,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4618"
+         x="-25.649038"
+         y="154.68556"
+         style="stroke-width:0.41464099">BraVue</tspan></text>
+  </g>
+</svg>
