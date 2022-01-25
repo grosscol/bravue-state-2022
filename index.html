@@ -138,7 +138,7 @@ Design
 <h3>
 Multipage Application
 </h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/grosscol/workspace/vapp/src/pages/</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bravue/src/pages/</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> gene</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── gene.html</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│  </span> ├── GenePage.vue</span>
@@ -162,17 +162,17 @@ Multipage Application
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publicPath</span><span class="op">:</span> <span class="st">&#39;/&#39;</span><span class="op">,</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span><span class="op">:</span> {</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">home</span><span class="op">:</span> {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span> <span class="st">&#39;src/pages/home/main.js&#39;</span><span class="op">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span>    <span class="st">&#39;src/pages/home/main.js&#39;</span><span class="op">,</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">template</span><span class="op">:</span> <span class="st">&#39;src/pages/home/home.html&#39;</span><span class="op">,</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">filename</span><span class="op">:</span> <span class="st">&#39;index.html&#39;</span><span class="op">,</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bravo:Home&#39;</span><span class="op">,</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span> [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;home&#39;</span>]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span>    <span class="st">&#39;Bravo:Home&#39;</span><span class="op">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span>   [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;home&#39;</span>]</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">variant</span><span class="op">:</span> {</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span> <span class="st">&#39;src/pages/variant/main.js&#39;</span><span class="op">,</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">entry</span><span class="op">:</span>    <span class="st">&#39;src/pages/variant/main.js&#39;</span><span class="op">,</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">template</span><span class="op">:</span> <span class="st">&#39;src/pages/variant/variant.html&#39;</span><span class="op">,</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>      <span class="co">//filename: &#39;variant&#39;,</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bravo:Variant&#39;</span><span class="op">,</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span> [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;variant&#39;</span>]</span></code></pre></div>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">filename</span><span class="op">:</span> <span class="st">&#39;variant.html&#39;</span><span class="op">,</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span>    <span class="st">&#39;Bravo:Variant&#39;</span><span class="op">,</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">chunks</span><span class="op">:</span>   [<span class="st">&#39;chunk-vendors&#39;</span><span class="op">,</span> <span class="st">&#39;chunk-common&#39;</span><span class="op">,</span> <span class="st">&#39;variant&#39;</span>]</span></code></pre></div>
 </section></section>
 <section>
 <section id="section-5" class="title-slide slide level1">
@@ -185,6 +185,11 @@ Shared Components
 <li>Mostly identical code.</li>
 <li>Differ on parameters and API endpoint.</li>
 </ul>
+<p><img data-src="assets/svgexport-12.svg" width="800" /></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<h3 id="base-component">Base Component</h3>
 <div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// BaseSnvCount methods</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  methods<span class="op">:</span> {</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">load</span><span class="op">:</span> <span class="kw">function</span>(width) {</span>
@@ -199,12 +204,13 @@ Shared Components
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">clearDrawing</span><span class="op">:</span>   <span class="kw">function</span>() {<span class="op">...</span>}<span class="op">,</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span></code></pre></div>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <h3 id="gene-variants-histogram">Gene Variants Histogram</h3>
 <ul>
 <li>Extends BaseSnvCount component</li>
-<li>Defines what’s required for gene histogram</li>
+<li>Declares required ensembleId</li>
+<li>Defines api endpoint</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> BaseSnvCount <span class="im">from</span> <span class="st">&#39;@/components/histogram/BaseSnvCount.vue&#39;</span></span>
@@ -221,12 +227,13 @@ Shared Components
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span></code></pre></div>
 </section>
-<section id="section-7" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <h3 id="region-variants-histogram">Region Variants Histogram</h3>
 <ul>
 <li>Also extends BaseSnvCount component</li>
-<li>Defines what’s required for region histogram</li>
+<li>Declares required position data</li>
+<li>Defines api endpoint</li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> BaseSnvCount <span class="im">from</span> <span class="st">&#39;@/components/histogram/BaseSnvCount.vue&#39;</span></span>
@@ -245,20 +252,22 @@ Shared Components
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span></code></pre></div>
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <h3 id="clear-components">Clear Components</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>GeneSnvCount </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>segmentBounds<span class="op">=</span><span class="st">&quot;segmentBounds&quot;</span> <span class="op">:</span>segmentRegions<span class="op">=</span><span class="st">&quot;segmentRegions&quot;</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>givenWidth<span class="op">=</span><span class="st">&quot;childWidth&quot;</span> <span class="op">:</span>givenMargins<span class="op">=</span><span class="st">&quot;childMargins&quot;</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>filters<span class="op">=</span><span class="st">&quot;filterArray&quot;</span> <span class="op">:</span>visibleVariants<span class="op">=</span><span class="st">&quot;visibleVariants&quot;</span><span class="op">/&gt;</span></span></code></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>RegionSnvCount</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>segmentBounds<span class="op">=</span><span class="st">&quot;segmentBounds&quot;</span> <span class="op">:</span>segmentRegions<span class="op">=</span><span class="st">&quot;segmentRegions&quot;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>givenWidth<span class="op">=</span><span class="st">&quot;childWidth&quot;</span> <span class="op">:</span>givenMargins<span class="op">=</span><span class="st">&quot;childMargins&quot;</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>filters<span class="op">=</span><span class="st">&quot;filterArray&quot;</span> <span class="op">:</span>visibleVariants<span class="op">=</span><span class="st">&quot;visibleVariants&quot;</span><span class="op">/&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;GeneSnvCount</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ot">  :segmentBounds=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ot">  :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ot">  :filters=</span><span class="st">&quot;filterArray&quot;</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ot">  :visibleVariants=</span><span class="st">&quot;visibleVariants&quot;</span><span class="kw">/&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;RegionSnvCount</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ot">  :segmentBounds=</span><span class="st">&quot;segmentBounds&quot;</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ot">  :segmentRegions=</span><span class="st">&quot;segmentRegions&quot;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ot">  :filters=</span><span class="st">&quot;filterArray&quot;</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ot">  :visibleVariants=</span><span class="st">&quot;visibleVariants&quot;</span><span class="kw">/&gt;</span></span></code></pre></div>
 </section></section>
 <section>
-<section id="section-9" class="title-slide slide level1">
+<section id="section-10" class="title-slide slide level1">
 <h1></h1>
 <h3>
 Composition
@@ -268,7 +277,7 @@ Composition
 <li>Easier to compose different dashboards</li>
 </ul>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <h3 id="gene-dashboard">Gene Dashboard</h3>
 <div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;template&gt;</span></span>
@@ -307,7 +316,7 @@ Composition
 <span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/template&gt;</span></span></code></pre></div>
 </section></section>
 <section>
-<section id="section-11" class="title-slide slide level1">
+<section id="section-12" class="title-slide slide level1">
 <h1></h1>
 <h3>
 Tests
@@ -318,7 +327,7 @@ Tests
 </ul>
 <div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">fd</span> <span class="st">&#39;\.(js|Vue|vue)$&#39;</span> . <span class="kw">|</span> <span class="ex">entr</span> <span class="at">-c</span> npm run test:unit</span></code></pre></div>
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <h3 id="test-component-functions-directly">Test Component Functions Directly</h3>
 <div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">//describe(&#39;SearchBox.vue query parsing.</span></span>
@@ -337,7 +346,7 @@ Tests
 <span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expect</span>(range_result<span class="op">.</span><span class="at">endpoint</span>)<span class="op">.</span><span class="at">to</span><span class="op">.</span><span class="fu">equal</span>(<span class="st">&#39;gene&#39;</span>)</span>
 <span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  })</span></code></pre></div>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <h3 id="test-component-ui-behavior">Test Component UI Behavior</h3>
 <div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(<span class="st">&#39;QualityFilterButton dropdown&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
@@ -354,7 +363,7 @@ Tests
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  })</span>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
 </section></section>
-<section id="section-14" class="title-slide slide level1">
+<section id="section-15" class="title-slide slide level1">
 <h1></h1>
 <h3>
 Drawbacks
@@ -369,7 +378,7 @@ Drawbacks
 </ul>
 </section>
 
-<section id="section-15" class="title-slide slide level1">
+<section id="section-16" class="title-slide slide level1">
 <h1></h1>
 <h3>
 Future Work

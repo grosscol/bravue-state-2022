@@ -7,7 +7,7 @@ date: 2022-01-25
 # 
 <h3>Multipage Application</h3>
 ```sh
-/home/grosscol/workspace/vapp/src/pages/
+bravue/src/pages/
 ├── gene
 │   ├── gene.html
 │   ├── GenePage.vue
@@ -33,15 +33,15 @@ module.exports = {
   publicPath: '/',
   pages: {
     home: {
-      entry: 'src/pages/home/main.js',
+      entry:    'src/pages/home/main.js',
       template: 'src/pages/home/home.html',
       filename: 'index.html',
-      title: 'Bravo:Home',
-      chunks: ['chunk-vendors', 'chunk-common', 'home']
+      title:    'Bravo:Home',
+      chunks:   ['chunk-vendors', 'chunk-common', 'home']
     variant: {
-      entry: 'src/pages/variant/main.js',
+      entry:    'src/pages/variant/main.js',
       template: 'src/pages/variant/variant.html',
-      //filename: 'variant',
-      title: 'Bravo:Variant',
-      chunks: ['chunk-vendors', 'chunk-common', 'variant']
+      filename: 'variant.html',
+      title:    'Bravo:Variant',
+      chunks:   ['chunk-vendors', 'chunk-common', 'variant']
 ```

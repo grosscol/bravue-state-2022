@@ -11,6 +11,10 @@ date: 2022-01-25
 - Mostly identical code.
 - Differ on parameters and API endpoint.
 
+![](assets/svgexport-12.svg){ width=800px }
+
+## 
+### Base Component
 ```js
 // BaseSnvCount methods
   methods: {
@@ -31,7 +35,8 @@ date: 2022-01-25
 ### Gene Variants Histogram
 
 - Extends BaseSnvCount component
-- Defines what's required for gene histogram
+- Declares required ensembleId
+- Defines api endpoint
 ```js
 <script>
 import BaseSnvCount from '@/components/histogram/BaseSnvCount.vue'
@@ -53,7 +58,8 @@ export default {
 ### Region Variants Histogram
 
 - Also extends BaseSnvCount component
-- Defines what's required for region histogram
+- Declares required position data
+- Defines api endpoint
 ```js
 <script>
 import BaseSnvCount from '@/components/histogram/BaseSnvCount.vue'
@@ -75,16 +81,18 @@ export default {
 
 ##
 ### Clear Components
-```js
+```html
 <GeneSnvCount 
-  :segmentBounds="segmentBounds" :segmentRegions="segmentRegions"
-  :givenWidth="childWidth" :givenMargins="childMargins"
-  :filters="filterArray" :visibleVariants="visibleVariants"/>
+  :segmentBounds="segmentBounds" 
+  :segmentRegions="segmentRegions"
+  :filters="filterArray" 
+  :visibleVariants="visibleVariants"/>
 ```
 
-```js
+```html
 <RegionSnvCount
-  :segmentBounds="segmentBounds" :segmentRegions="segmentRegions"
-  :givenWidth="childWidth" :givenMargins="childMargins"
-  :filters="filterArray" :visibleVariants="visibleVariants"/>
+  :segmentBounds="segmentBounds" 
+  :segmentRegions="segmentRegions"
+  :filters="filterArray" 
+  :visibleVariants="visibleVariants"/>
 ```
